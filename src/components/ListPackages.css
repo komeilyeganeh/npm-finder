@@ -1,0 +1,14 @@
+.container {
+    background-color: #000;
+    width: 25rem;
+    padding: 2rem;
+    border-radius: 15px;
+}
+.spin {
+    margin: 1rem auto;
+}
+.error {
+    text-align: center;
+    padding: .5rem;
+    color: #fff;
+}

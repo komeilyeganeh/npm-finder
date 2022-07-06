@@ -1,0 +1,14 @@
+ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 25px;
+    max-height: 250px;
+    overflow-y: auto;
+    margin-top: 2rem;
+}
+a {
+    border-radius: 10px;
+    border: 2px solid #34B3F1;
+    color: #fff;
+}

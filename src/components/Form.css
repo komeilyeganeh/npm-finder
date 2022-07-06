@@ -1,0 +1,25 @@
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+input {
+    width: 100%;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+input[type="text"] {
+    outline: none;
+    padding: .5rem;
+    border: 1px solid #aaa;
+}
+input[type="submit"] {
+    background: transparent;
+    border: none;
+    background-color: #F15412;
+    color: #fff;
+    cursor: pointer;
+    padding: .5rem 0;
+    font-weight: bold;
+}
