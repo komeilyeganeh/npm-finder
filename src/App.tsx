@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import SearchPackages from "./components/searchPackages/SearchPackages";
+import ListPackages from "./components/listPackages/ListPackages";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+    <>
+      <div className="wrapper">
+        <h1>Package search</h1>
+        <SearchPackages />
+        <ListPackages />
+      </div>
+      <h1 className="developer-info">
+        Developer :{" "}
+        <a href="https://komeilyeganeh.ir" target="_blank" className="developer-name">
+          Komeil Yeganeh
         </a>
-      </header>
-    </div>
+      </h1>
+    </>
   );
-}
+};
 
 export default App;

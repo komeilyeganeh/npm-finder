@@ -1,0 +1,30 @@
+@import "../../styles/color";
+
+.list-package-wrapper {
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    &::-webkit-scrollbar-thumb {
+        background-color: $color-primary;
+    }
+    &::-webkit-scrollbar {
+        width: 3px;
+      }
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+        padding: 5px;
+        li {
+            width: 100%;
+            border-radius: 5px;
+            background-color: $color-white;
+            box-shadow: 0 0 3px 1px rgba($color: $color-black, $alpha: .2);
+            transition: .2s ease-in;
+            &:hover {
+                box-shadow: 0 0 3px 1px rgba($color: $color-primary, $alpha: .8);
+            }
+        }
+    }
+}
