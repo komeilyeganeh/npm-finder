@@ -21,6 +21,7 @@
             border-radius: 5px;
             background-color: $color-white;
             box-shadow: 0 0 3px 1px rgba($color: $color-black, $alpha: .2);
+            text-align: center;
             transition: .2s ease-in;
             &:hover {
                 box-shadow: 0 0 3px 1px rgba($color: $color-primary, $alpha: .8);

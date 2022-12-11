@@ -1,37 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 @import "./styles/color";
 
 // _-_-_-_-_-_ Reset Css _-_-_-_-_-_
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 // _-_-_-_-_-_ Global Styles _-_-_-_-_-_
 body {
-    min-height: 100vh;
-    background-color: $color-main;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  background-color: $color-main;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
 }
 button {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 li {
-    list-style: none;
+  list-style: none;
 }
 a {
-    text-decoration: none;
-    display: block;
-    padding: 10px 0;
-    color: $color-black;
+  text-decoration: none;
+  display: block;
+  padding: 10px 0;
+  color: $color-black;
 }
-.wrapper {
+.container {
+  width: 100%;
+  .wrapper {
     width: 450px;
-    max-width: 95%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,16 +40,29 @@ a {
     border-radius: 10px;
     background-color: $color-white;
     padding: 2rem;
-    text-align: center;
-    box-shadow: 0 0 20px 4px rgba($color: $color-black, $alpha: .3);
-}
-.developer-name {
+    box-shadow: 0 0 20px 4px rgba($color: $color-black, $alpha: 0.3);
+    @media screen and (max-width: 600px) {
+        width: 90vw;
+    }
+  }
+  .title-app {
+    @media screen and (max-width: 400px) {
+        font-size: 1.4rem;
+    }
+  }
+  .developer-name {
     text-decoration: underline;
-}
-.developer-info {
+  }
+  .developer-info {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    border-radius: 10px;
+    background-color: rgba($color: $color-white, $alpha: 0.8);
     column-gap: 10px;
-    font-size: .9rem;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+  }
 }
